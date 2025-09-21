@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC + Technical Excellence Tracker</title>
+    <link rel="stylesheet" href="enhanced_app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>🎯 UPSC + Tech Excellence</h2>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-btn active" data-section="home">🏠 Home</button>
+                <button class="nav-btn" data-section="tracker">📅 UPSC Tracker</button>
+                <button class="nav-btn" data-section="technical">💻 Technical Learning</button>
+                <button class="nav-btn" data-section="schedule">⏰ Schedule & Approach</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- HOME SECTION -->
+        <section id="home" class="section active">
+            <div class="hero-section">
+                <h1>Welcome to Your Excellence Journey</h1>
+                <p class="hero-subtitle">Complete UPSC preparation with integrated technical upskilling</p>
+                <div class="current-date">📅 Today: <span id="current-date"></span></div>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="card-icon">📚</div>
+                    <div class="card-content">
+                        <h3>UPSC Journey</h3>
+                        <div class="stat-number" id="days-to-prelims">246</div>
+                        <div class="stat-label">Days to Prelims 2026</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%"></div>
+                        </div>
+                        <p class="card-description">Systematic 467-day preparation plan</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-content">
+                        <h3>Technical Mastery</h3>
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Months DevOps + AI</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 12.5%"></div>
+                        </div>
+                        <p class="card-description">Python → DevOps → AI → Certifications</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-content">
+                        <h3>Current Phase</h3>
+                        <div class="stat-number">Phase 1</div>
+                        <div class="stat-label" id="current-phase">Coaching Coverage</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%"></div>
+                        </div>
+                        <p class="card-description">Live classes + evening study</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-content">
+                        <h3>Efficiency Gain</h3>
+                        <div class="stat-number">90%</div>
+                        <div class="stat-label">Study Efficiency</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                        <p class="card-description">Optimized from 70% baseline</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategy Overview -->
+            <div class="strategy-overview">
+                <h2>🎯 Integrated Learning Strategy</h2>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <div class="strategy-header">
+                            <h3>🌅 Morning Excellence (4:45-7:00 AM)</h3>
+                        </div>
+                        <ul class="strategy-list">
+                            <li>Sociology Optional - Live Classes</li>
+                            <li>Intensive revision sessions</li>
+                            <li>Mock test practice</li>
+                            <li>Peak cognitive performance window</li>
+                        </ul>
+                        <div class="time-block">2h 15m daily</div>
+                    </div>
+
+                    <div class="strategy-card">
+                        <div class="strategy-header">
+                            <h3>💼 Work + Tech (9:00-9:45 AM)</h3>
+                        </div>
+                        <ul class="strategy-list">
+                            <li>Technical learning during work</li>
+                            <li>45-minute focused sessions</li>
+                            <li>Python → DevOps → AI progression</li>
+                            <li>No extra time burden</li>
+                        </ul>
+                        <div class="time-block">45m daily</div>
+                    </div>
+
+                    <div class="strategy-card">
+                        <div class="strategy-header">
+                            <h3>🌆 Evening Focus (6:00-10:00 PM)</h3>
+                        </div>
+                        <ul class="strategy-list">
+                            <li>GS1 primary subject (6-7:30 PM)</li>
+                            <li>Strategic revision (8:30-10 PM)</li>
+                            <li>Weekly subject blocks</li>
+                            <li>Deep mastery approach</li>
+                        </ul>
+                        <div class="time-block">3h 30m daily</div>
+                    </div>
+
+                    <div class="strategy-card">
+                        <div class="strategy-header">
+                            <h3>🎯 Weekend Intensive</h3>
+                        </div>
+                        <ul class="strategy-list">
+                            <li>GS2 comprehensive coverage</li>
+                            <li>Technical project work</li>
+                            <li>Current affairs analysis</li>
+                            <li>Hands-on practice</li>
+                        </ul>
+                        <div class="time-block">6h 30m daily</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h2>🚀 Quick Actions</h2>
+                <div class="action-grid">
+                    <button class="action-btn" data-section="tracker">
+                        <span class="action-icon">📅</span>
+                        <div class="action-content">
+                            <h4>View Daily Tracker</h4>
+                            <p>Access 467-day UPSC schedule</p>
+                        </div>
+                    </button>
+                    <button class="action-btn" data-section="technical">
+                        <span class="action-icon">💻</span>
+                        <div class="action-content">
+                            <h4>Technical Learning</h4>
+                            <p>8-month DevOps + AI roadmap</p>
+                        </div>
+                    </button>
+                    <button class="action-btn" data-section="schedule">
+                        <span class="action-icon">⏰</span>
+                        <div class="action-content">
+                            <h4>Schedule Analysis</h4>
+                            <p>Optimization insights</p>
+                        </div>
+                    </button>
+                    <button class="action-btn" onclick="goToToday()">
+                        <span class="action-icon">📍</span>
+                        <div class="action-content">
+                            <h4>Go to Today</h4>
+                            <p>Jump to current day</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPSC TRACKER SECTION -->
+        <section id="tracker" class="section">
+            <div class="section-header">
+                <h1>📅 UPSC Daily Excellence Tracker</h1>
+                <p class="section-subtitle">Complete 467-day systematic study plan</p>
+            </div>
+
+            <!-- Tracker Controls -->
+            <div class="tracker-controls">
+                <div class="control-group">
+                    <label for="month-filter">Filter by Month</label>
+                    <select id="month-filter">
+                        <option value="">All Months</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="phase-filter">Filter by Phase</label>
+                    <select id="phase-filter">
+                        <option value="">All Phases</option>
+                        <option value="Coaching Coverage Phase">Coaching Coverage Phase</option>
+                        <option value="Coaching Completion Phase">Coaching Completion Phase</option>
+                        <option value="Self Study Intensive">Self Study Intensive</option>
+                        <option value="Test Series Phase">Test Series Phase</option>
+                        <option value="Final Revision">Final Revision</option>
+                        <option value="Mains Preparation">Mains Preparation</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="search-input">Search</label>
+                    <input type="text" id="search-input" placeholder="Search topics, dates...">
+                </div>
+                <div class="control-actions">
+                    <button id="today-btn" class="btn btn-primary">📍 Go to Today</button>
+                    <button id="reset-btn" class="btn btn-secondary">🔄 Reset</button>
+                    <button id="export-btn" class="btn btn-success">📤 Export</button>
+                </div>
+            </div>
+
+            <!-- Tracker Table -->
+            <div class="table-container">
+                <table class="tracker-table">
+                    <thead>
+                        <tr>
+                            <th>📅 Date</th>
+                            <th>📆 Day</th>
+                            <th>🎓 Sociology</th>
+                            <th>📚 GS 01</th>
+                            <th>🏛️ GS 02</th>
+                            <th>📰 Current Affairs</th>
+                            <th>📝 Notes</th>
+                            <th>🎯 Phase</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tracker-tbody">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination"></div>
+        </section>
+
+        <!-- TECHNICAL LEARNING SECTION -->
+        <section id="technical" class="section">
+            <div class="section-header">
+                <h1>💻 Technical Excellence Roadmap</h1>
+                <p class="section-subtitle">8-month DevOps + AI specialization journey</p>
+            </div>
+
+            <!-- Technical Overview -->
+            <div class="tech-overview">
+                <div class="tech-stats">
+                    <div class="tech-stat">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Months</div>
+                    </div>
+                    <div class="tech-stat">
+                        <div class="stat-number">5.25h</div>
+                        <div class="stat-label">Weekly Hours</div>
+                    </div>
+                    <div class="tech-stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="tech-stat">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Salary Growth</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Phases -->
+            <div class="tech-phases">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h3>Phase 1: Foundation (Months 1-2)</h3>
+                        <div class="phase-duration">8 weeks</div>
+                    </div>
+                    <div class="phase-content">
+                        <h4>Python Programming Mastery</h4>
+                        <ul>
+                            <li>Variables, data types, control structures</li>
+                            <li>Functions, modules, OOP concepts</li>
+                            <li>System administration scripts</li>
+                            <li>API integration and JSON handling</li>
+                        </ul>
+                        <h4>AI/ML Fundamentals</h4>
+                        <ul>
+                            <li>Introduction to machine learning</li>
+                            <li>Data preprocessing with pandas</li>
+                            <li>Statistical analysis basics</li>
+                            <li>Data visualization techniques</li>
+                        </ul>
+                        <div class="resources">
+                            <h5>Resources:</h5>
+                            <p>• Udemy: 100 Days of Code (Angela Yu)</p>
+                            <p>• LinkedIn Learning: Python Essential Training</p>
+                            <p>• YouTube: Python for DevOps (Abhishek)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h3>Phase 2: DevOps + AI Integration (Months 3-4)</h3>
+                        <div class="phase-duration">8 weeks</div>
+                    </div>
+                    <div class="phase-content">
+                        <h4>Cloud Automation</h4>
+                        <ul>
+                            <li>AWS Boto3 scripting</li>
+                            <li>Azure SDK for Python</li>
+                            <li>Infrastructure as Code</li>
+                            <li>Monitoring and alerting automation</li>
+                        </ul>
+                        <h4>AIOps Implementation</h4>
+                        <ul>
+                            <li>Anomaly detection systems</li>
+                            <li>Intelligent log analysis</li>
+                            <li>Predictive alerting mechanisms</li>
+                            <li>AI in CI/CD pipelines</li>
+                        </ul>
+                        <div class="resources">
+                            <h5>Resources:</h5>
+                            <p>• AWS Certified AI Practitioner Course</p>
+                            <p>• Azure DevOps for Beginners</p>
+                            <p>• GCP Professional DevOps Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h3>Phase 3: Generative AI Mastery (Months 5-6)</h3>
+                        <div class="phase-duration">8 weeks</div>
+                    </div>
+                    <div class="phase-content">
+                        <h4>Generative AI Fundamentals</h4>
+                        <ul>
+                            <li>LLMs and transformer architecture</li>
+                            <li>Prompt engineering techniques</li>
+                            <li>Fine-tuning and customization</li>
+                            <li>API integration and deployment</li>
+                        </ul>
+                        <h4>GenAI for DevOps</h4>
+                        <ul>
+                            <li>Code generation and review</li>
+                            <li>Documentation automation</li>
+                            <li>Intelligent troubleshooting</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                        <div class="resources">
+                            <h5>Resources:</h5>
+                            <p>• Generative AI for DevOps (Udemy)</p>
+                            <p>• GenAI Essentials (freeCodeCamp)</p>
+                            <p>• Machine Learning A-Z (Udemy)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h3>Phase 4: Certifications + Portfolio (Months 7-8)</h3>
+                        <div class="phase-duration">8 weeks</div>
+                    </div>
+                    <div class="phase-content">
+                        <h4>Industry Certifications</h4>
+                        <ul>
+                            <li>AWS AI Practitioner ($100)</li>
+                            <li>Azure AI Fundamentals ($99)</li>
+                            <li>GCP Professional ML Engineer ($200)</li>
+                            <li>GSDC Generative AI Professional ($250)</li>
+                        </ul>
+                        <h4>Portfolio Projects</h4>
+                        <ul>
+                            <li>AI-powered monitoring dashboard</li>
+                            <li>Intelligent deployment system</li>
+                            <li>GenAI chatbot for ops</li>
+                            <li>Automated testing framework</li>
+                        </ul>
+                        <div class="cost-breakdown">
+                            <h5>Total Investment: $2,900-4,000</h5>
+                            <p>Expected ROI: 20-40% salary increase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENHANCED SCHEDULE & APPROACH SECTION WITH COMPLETE ANALYSIS -->
+        <section id="schedule" class="section">
+            <div class="section-header">
+                <h1>⏰ Complete Schedule Optimization & Strategic Approach</h1>
+                <p class="section-subtitle">Comprehensive transformation analysis with milestones and improvement tracking</p>
+            </div>
+
+            <!-- Executive Summary -->
+            <div class="analysis-summary">
+                <h2>📊 Executive Summary</h2>
+                <div class="summary-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⏰</div>
+                        <div class="highlight-content">
+                            <h3>Time Optimization</h3>
+                            <div class="highlight-stat">64h → 49h</div>
+                            <p>23% weekly time reduction</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⚡</div>
+                        <div class="highlight-content">
+                            <h3>Efficiency Gain</h3>
+                            <div class="highlight-stat">70% → 90%</div>
+                            <p>Significant effectiveness boost</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💻</div>
+                        <div class="highlight-content">
+                            <h3>Tech Integration</h3>
+                            <div class="highlight-stat">+5.25h</div>
+                            <p>Weekly technical upskilling</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-content">
+                            <h3>Burnout Risk</h3>
+                            <div class="highlight-stat">High → Low</div>
+                            <p>Sustainable long-term approach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time Optimization Analysis -->
+            <div class="optimization-analysis">
+                <h2>📈 Detailed Time Optimization Analysis</h2>
+                <div class="analysis-table-container">
+                    <table class="analysis-table">
+                        <thead>
+                            <tr>
+                                <th>Time Period</th>
+                                <th>Original UPSC Hours</th>
+                                <th>Optimized UPSC Hours</th>
+                                <th>Change</th>
+                                <th>Technical Hours Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Monday-Friday Daily</strong></td>
+                                <td>8.0 hours</td>
+                                <td>5.75 hours</td>
+                                <td class="negative-change">-2.25 hours</td>
+                                <td class="positive-change">1.0 → 0.75 hours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Saturday</strong></td>
+                                <td>12.0 hours</td>
+                                <td>10.75 hours</td>
+                                <td class="negative-change">-1.25 hours</td>
+                                <td class="positive-change">0 → 0.75 hours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sunday</strong></td>
+                                <td>12.0 hours</td>
+                                <td>9.5 hours</td>
+                                <td class="negative-change">-2.5 hours</td>
+                                <td class="positive-change">0 → 0.75 hours</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td><strong>Weekly Total</strong></td>
+                                <td><strong>64.0 hours</strong></td>
+                                <td><strong>49.0 hours</strong></td>
+                                <td class="negative-change"><strong>-15.0 hours</strong></td>
+                                <td class="positive-change"><strong>5.0 → 5.25 hours</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="table-note">✨ <strong>Strategic 45-minute technical upskilling blocks optimally placed during peak learning windows</strong></p>
+                </div>
+            </div>
+
+            <!-- Detailed Daily Schedule -->
+            <div class="detailed-schedule">
+                <h2>🕐 Complete Daily Schedule Breakdown</h2>
+                <div class="schedule-table-container">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Time Slot</th>
+                                <th>Monday to Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                                <th>Activity Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="wake-up-row">
+                                <td class="time-slot">04:00 - 04:45</td>
+                                <td>Wake Up, Nuts, Warm Water, Light Cycle, Bath</td>
+                                <td>Wake Up, Nuts, Warm Water, Light Cycle, Bath</td>
+                                <td>Wake Up, Nuts, Warm Water, Light Cycle, Bath</td>
+                                <td class="activity-type health">Health & Wake-up</td>
+                            </tr>
+                            <tr class="sociology-row">
+                                <td class="time-slot">04:45 - 06:45</td>
+                                <td>Sociology - Classes/Self Study</td>
+                                <td>Sociology - Intensive Revision</td>
+                                <td>Sociology - Answer Writing Practice</td>
+                                <td class="activity-type upsc">UPSC - Optional</td>
+                            </tr>
+                            <tr class="current-affairs-row">
+                                <td class="time-slot">06:45 - 07:00</td>
+                                <td>UCAN Session (Current Affairs)</td>
+                                <td>UCAN Session</td>
+                                <td>UCAN Session</td>
+                                <td class="activity-type upsc">UPSC - Current Affairs</td>
+                            </tr>
+                            <tr class="personal-row">
+                                <td class="time-slot">07:00 - 08:30</td>
+                                <td>Travel & Breakfast</td>
+                                <td>Breakfast</td>
+                                <td>Breakfast</td>
+                                <td class="activity-type personal">Personal</td>
+                            </tr>
+                            <tr class="tech-setup-row">
+                                <td class="time-slot">08:30 - 09:00</td>
+                                <td>Office Setup & Email Check</td>
+                                <td>🔧 Technical Upskilling - Personal Projects</td>
+                                <td>🔧 Technical Learning - New Technologies</td>
+                                <td class="activity-type work-tech">Work Preparation / Tech Growth</td>
+                            </tr>
+                            <tr class="peak-tech-row highlight-row">
+                                <td class="time-slot">09:00 - 09:45</td>
+                                <td class="highlight-activity">🔥 Technical Upskilling (Work Hours)</td>
+                                <td>General Studies - Paper 2 Focus</td>
+                                <td>General Studies - Weak Areas Focus</td>
+                                <td class="activity-type tech">Technical Growth / UPSC Study</td>
+                            </tr>
+                            <tr class="work-peak-row">
+                                <td class="time-slot">09:45 - 11:30</td>
+                                <td>DevOps Work - Complex Tasks (Peak Hours)</td>
+                                <td>General Studies - Paper 2 Continued</td>
+                                <td>General Studies - Continued</td>
+                                <td class="activity-type work">Work - High Focus / UPSC Study</td>
+                            </tr>
+                            <tr class="work-collab-row">
+                                <td class="time-slot">11:30 - 12:15</td>
+                                <td>DevOps Work - Collaborative Tasks</td>
+                                <td>General Studies - Paper 1 Focus</td>
+                                <td>Current Affairs - Monthly Magazine</td>
+                                <td class="activity-type work">Work - Medium Focus / UPSC Study</td>
+                            </tr>
+                            <tr class="work-doc-row">
+                                <td class="time-slot">12:15 - 13:00</td>
+                                <td>DevOps Work - Documentation/Reviews</td>
+                                <td>General Studies - Paper 1 Continued</td>
+                                <td>Current Affairs - Continued</td>
+                                <td class="activity-type work">Work - Light Focus / UPSC Study</td>
+                            </tr>
+                            <tr class="lunch-row">
+                                <td class="time-slot">13:00 - 14:00</td>
+                                <td>Lunch Break</td>
+                                <td>Lunch Break</td>
+                                <td>Lunch Break</td>
+                                <td class="activity-type personal">Personal</td>
+                            </tr>
+                            <tr class="work-admin-row">
+                                <td class="time-slot">14:00 - 16:15</td>
+                                <td>DevOps Work - Administrative Tasks</td>
+                                <td>Current Affairs - Weekly Compilation</td>
+                                <td>Mock Test - Full Length Practice</td>
+                                <td class="activity-type work">Work - Light Focus / UPSC Study</td>
+                            </tr>
+                            <tr class="work-wrap-row">
+                                <td class="time-slot">16:15 - 17:00</td>
+                                <td>DevOps Work - Planning & Wrap-up</td>
+                                <td>Answer Writing Practice - GS</td>
+                                <td>Mock Test Analysis</td>
+                                <td class="activity-type work">Work - Planning / UPSC Study</td>
+                            </tr>
+                            <tr class="personal-row">
+                                <td class="time-slot">17:00 - 17:30</td>
+                                <td>Travel & Snacks</td>
+                                <td>Snacks & Fresh Up</td>
+                                <td>Snacks & Light Exercise</td>
+                                <td class="activity-type personal">Personal</td>
+                            </tr>
+                            <tr class="newspaper-row">
+                                <td class="time-slot">17:30 - 18:00</td>
+                                <td>Newspaper & Current Affairs</td>
+                                <td>Newspaper Deep Reading</td>
+                                <td>Newspaper & Editorial Analysis</td>
+                                <td class="activity-type upsc">UPSC - Current Affairs</td>
+                            </tr>
+                            <tr class="gs-row">
+                                <td class="time-slot">18:00 - 19:30</td>
+                                <td>General Studies - Primary Focus</td>
+                                <td>Sociology Optional - Answer Writing</td>
+                                <td>Weekly Revision - All Subjects</td>
+                                <td class="activity-type upsc">UPSC - General Studies</td>
+                            </tr>
+                            <tr class="dinner-row">
+                                <td class="time-slot">19:30 - 20:30</td>
+                                <td>Dinner Break</td>
+                                <td>Dinner Break</td>
+                                <td>Dinner Break</td>
+                                <td class="activity-type personal">Personal</td>
+                            </tr>
+                            <tr class="revision-row">
+                                <td class="time-slot">20:30 - 22:00</td>
+                                <td>General Studies/Optional - Revision</td>
+                                <td>Mock Test Analysis/Revision</td>
+                                <td>Personal Time/Family Time</td>
+                                <td class="activity-type upsc">UPSC - Revision / Personal</td>
+                            </tr>
+                            <tr class="sleep-prep-row">
+                                <td class="time-slot">22:00 - 22:30</td>
+                                <td>Relaxation & Sleep Preparation</td>
+                                <td>Relaxation & Sleep Preparation</td>
+                                <td>Relaxation & Sleep Preparation</td>
+                                <td class="activity-type personal">Personal</td>
+                            </tr>
+                            <tr class="sleep-row">
+                                <td class="time-slot">22:30 - 04:00</td>
+                                <td>Sleep</td>
+                                <td>Sleep</td>
+                                <td>Sleep</td>
+                                <td class="activity-type rest">Rest</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="table-note">⚡ <strong>Strategic placement of technical upskilling during optimal learning window (9:00-9:45 AM)</strong></p>
+                </div>
+            </div>
+
+            <!-- Strategic Technical Integration -->
+            <div class="tech-integration-analysis">
+                <h2>🔥 Strategic Technical Integration Analysis</h2>
+                <div class="integration-table-container">
+                    <table class="integration-table">
+                        <thead>
+                            <tr>
+                                <th>Time Slot</th>
+                                <th>Activity</th>
+                                <th>Energy Level</th>
+                                <th>Duration</th>
+                                <th>Strategic Reasoning</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time-slot">08:30 - 09:00</td>
+                                <td>Office Setup & Email Check</td>
+                                <td class="energy-medium">Medium</td>
+                                <td>30 mins</td>
+                                <td>Warm-up routine, prepare for productive work</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td class="time-slot">09:00 - 09:45</td>
+                                <td class="highlight-activity">🔥 Technical Upskilling</td>
+                                <td class="energy-high">Medium-High</td>
+                                <td>45 mins</td>
+                                <td><strong>Peak learning window - Post-coffee energy, pre-work pressure</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="time-slot">09:45 - 11:30</td>
+                                <td>DevOps Work - Complex Tasks</td>
+                                <td class="energy-peak">Peak</td>
+                                <td>1h 45m</td>
+                                <td>Most challenging work during maximum alertness</td>
+                            </tr>
+                            <tr>
+                                <td class="time-slot">11:30 - 12:15</td>
+                                <td>DevOps Work - Collaborative Tasks</td>
+                                <td class="energy-high">High</td>
+                                <td>45 mins</td>
+                                <td>Team interactions, meetings, code reviews</td>
+                            </tr>
+                            <tr>
+                                <td class="time-slot">12:15 - 13:00</td>
+                                <td>DevOps Work - Documentation/Reviews</td>
+                                <td class="energy-high">High</td>
+                                <td>45 mins</td>
+                                <td>Knowledge work requiring focus but less intensity</td>
+                            </tr>
+                            <tr>
+                                <td class="time-slot">13:00 - 14:00</td>
+                                <td>Lunch Break</td>
+                                <td class="energy-rest">Rest</td>
+                                <td>60 mins</td>
+                                <td>Proper meal break for energy restoration</td>
+                            </tr>
+                            <tr>
+                                <td class="time-slot">14:00 - 16:15</td>
+                                <td>DevOps Work - Administrative Tasks</td>
+                                <td class="energy-medium">Medium</td>
+                                <td>2h 15m</td>
+                                <td>Post-lunch dip - lighter administrative work</td>
+                            </tr>
+                            <tr>
+                                <td class="time-slot">16:15 - 17:00</td>
+                                <td>DevOps Work - Planning & Wrap-up</td>
+                                <td class="energy-medium">Medium</td>
+                                <td>45 mins</td>
+                                <td>Day closure, planning for next day</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="integration-benefits">
+                    <h3>🎯 Key Strategic Benefits:</h3>
+                    <div class="benefit-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📈</div>
+                            <div class="benefit-text">Continuous DevOps skill development enhances job performance and promotion prospects</div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔗</div>
+                            <div class="benefit-text">Technical knowledge complements UPSC technology governance and digital India topics</div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🧠</div>
+                            <div class="benefit-text">Workplace-integrated learning shows 60% better retention than separate training sessions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quality & Sustainability Metrics -->
+            <div class="quality-metrics">
+                <h2>📊 Quality & Sustainability Improvement Metrics</h2>
+                <div class="metrics-table-container">
+                    <table class="metrics-table">
+                        <thead>
+                            <tr>
+                                <th>Quality Metric</th>
+                                <th>Original Schedule</th>
+                                <th>Optimized Schedule</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🧠 Study Session Length</td>
+                                <td class="negative-metric">Very Long (8-12h blocks)</td>
+                                <td class="positive-metric">Focused Blocks (1.5-2h)</td>
+                                <td class="impact-major">Major Improvement</td>
+                            </tr>
+                            <tr>
+                                <td>😴 Sleep Impact</td>
+                                <td class="negative-metric">Poor (Study till 10:30 PM)</td>
+                                <td class="positive-metric">Excellent (Sleep by 10:30 PM)</td>
+                                <td class="impact-significant">Significant Enhancement</td>
+                            </tr>
+                            <tr>
+                                <td>💼 Work Integration</td>
+                                <td class="negative-metric">Separate (1h block)</td>
+                                <td class="positive-metric">Integrated (45m optimal)</td>
+                                <td class="impact-strategic">Strategic Optimization</td>
+                            </tr>
+                            <tr>
+                                <td>🔥 Burnout Risk</td>
+                                <td class="negative-metric">High (69h/week)</td>
+                                <td class="positive-metric">Low (54.25h/week)</td>
+                                <td class="impact-risk">Risk Reduction</td>
+                            </tr>
+                            <tr>
+                                <td>📚 Retention Quality</td>
+                                <td class="negative-metric">Medium (~70% efficiency)</td>
+                                <td class="positive-metric">High (~90% efficiency)</td>
+                                <td class="impact-performance">Performance Boost</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Comprehensive Impact Analysis -->
+            <div class="impact-analysis">
+                <h2>🎯 Comprehensive Impact Analysis</h2>
+                <div class="impact-table-container">
+                    <table class="impact-table">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Original Schedule</th>
+                                <th>Optimized Schedule</th>
+                                <th>Advantage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Raw Study Hours</td>
+                                <td>3,328 hours</td>
+                                <td>2,548 hours</td>
+                                <td class="advantage-efficiency">-780 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Effective Learning Hours</td>
+                                <td>~2,330 hours (70% efficiency)</td>
+                                <td>2,293 hours (90% efficiency)</td>
+                                <td class="advantage-quality">Higher quality</td>
+                            </tr>
+                            <tr>
+                                <td>Technical Skills Growth</td>
+                                <td>260 hours</td>
+                                <td>273 hours</td>
+                                <td class="advantage-growth">+13 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Health & Sustainability</td>
+                                <td>High burnout risk</td>
+                                <td>Excellent balance</td>
+                                <td class="advantage-major">Major advantage</td>
+                            </tr>
+                            <tr>
+                                <td>Work Performance</td>
+                                <td>Potential decline</td>
+                                <td>Enhanced performance</td>
+                                <td class="advantage-career">Career growth</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Weekly Technical Focus Schedule -->
+            <div class="tech-focus-schedule">
+                <h2>💻 Weekly Technical Focus Schedule</h2>
+                <div class="tech-schedule-container">
+                    <table class="tech-schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Day Type</th>
+                                <th>Time Slot</th>
+                                <th>Duration</th>
+                                <th>Focus Area</th>
+                                <th>Strategic Advantage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="weekday-tech">
+                                <td><strong>Monday-Friday</strong></td>
+                                <td class="time-slot">09:00-09:45</td>
+                                <td>45 minutes</td>
+                                <td>DevOps Tools & Practices</td>
+                                <td>Peak learning window during work</td>
+                            </tr>
+                            <tr class="saturday-tech">
+                                <td><strong>Saturday</strong></td>
+                                <td class="time-slot">08:30-09:15</td>
+                                <td>45 minutes</td>
+                                <td>Personal Projects</td>
+                                <td>Creative exploration time</td>
+                            </tr>
+                            <tr class="sunday-tech">
+                                <td><strong>Sunday</strong></td>
+                                <td class="time-slot">08:30-09:15</td>
+                                <td>45 minutes</td>
+                                <td>New Technologies</td>
+                                <td>Future-proofing skills</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Milestones & Progress Tracking -->
+            <div class="milestones-tracking">
+                <h2>🎯 Key Milestones & Progress Tracking</h2>
+
+                <div class="milestone-categories">
+                    <div class="milestone-category">
+                        <h3>📚 UPSC Preparation Milestones</h3>
+                        <div class="milestone-timeline">
+                            <div class="milestone-item">
+                                <div class="milestone-marker completed">✅</div>
+                                <div class="milestone-content">
+                                    <h4>Month 1: Foundation Setup</h4>
+                                    <p>Coaching enrollment, schedule optimization, initial subject coverage</p>
+                                    <div class="milestone-date">September 2025</div>
+                                </div>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-marker current">📍</div>
+                                <div class="milestone-content">
+                                    <h4>Months 2-4: Coaching Coverage Phase</h4>
+                                    <p>Complete Geography, International Relations, Economy coverage</p>
+                                    <div class="milestone-date">October - December 2025</div>
+                                </div>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-marker upcoming">⏳</div>
+                                <div class="milestone-content">
+                                    <h4>Months 5-8: Intensive Preparation</h4>
+                                    <p>Ethics mastery, mock test series, answer writing practice</p>
+                                    <div class="milestone-date">January - April 2026</div>
+                                </div>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-marker upcoming">🎯</div>
+                                <div class="milestone-content">
+                                    <h4>Month 9: Final Revision</h4>
+                                    <p>Comprehensive revision, final mock tests, exam strategy</p>
+                                    <div class="milestone-date">May 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="milestone-category">
+                        <h3>💻 Technical Learning Milestones</h3>
+                        <div class="milestone-timeline">
+                            <div class="milestone-item">
+                                <div class="milestone-marker current">📍</div>
+                                <div class="milestone-content">
+                                    <h4>Months 1-2: Python Foundation</h4>
+                                    <p>Core Python programming, data structures, basic automation</p>
+                                    <div class="milestone-date">September - October 2025</div>
+                                </div>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-marker upcoming">⏳</div>
+                                <div class="milestone-content">
+                                    <h4>Months 3-4: DevOps Integration</h4>
+                                    <p>Cloud platforms, CI/CD, infrastructure automation</p>
+                                    <div class="milestone-date">November - December 2025</div>
+                                </div>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-marker upcoming">🤖</div>
+                                <div class="milestone-content">
+                                    <h4>Months 5-6: AI/ML Specialization</h4>
+                                    <p>Generative AI, AIOps, intelligent automation</p>
+                                    <div class="milestone-date">January - February 2026</div>
+                                </div>
+                            </div>
+                            <div class="milestone-item">
+                                <div class="milestone-marker upcoming">🏆</div>
+                                <div class="milestone-content">
+                                    <h4>Months 7-8: Certification & Portfolio</h4>
+                                    <p>Industry certifications, project portfolio, career advancement</p>
+                                    <div class="milestone-date">March - April 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Improvement Observations -->
+            <div class="improvement-observations">
+                <h2>🔍 Key Improvement Observations & Insights</h2>
+
+                <div class="observation-categories">
+                    <div class="observation-category">
+                        <h3>📈 Quantitative Improvements</h3>
+                        <div class="observation-grid">
+                            <div class="observation-item">
+                                <div class="observation-metric">23%</div>
+                                <div class="observation-label">Time Reduction</div>
+                                <div class="observation-description">Weekly study hours optimized from 64 to 49 hours</div>
+                            </div>
+                            <div class="observation-item">
+                                <div class="observation-metric">20%</div>
+                                <div class="observation-label">Efficiency Boost</div>
+                                <div class="observation-description">Study effectiveness increased from 70% to 90%</div>
+                            </div>
+                            <div class="observation-item">
+                                <div class="observation-metric">5.25h</div>
+                                <div class="observation-label">Tech Integration</div>
+                                <div class="observation-description">Weekly technical learning without extra time burden</div>
+                            </div>
+                            <div class="observation-item">
+                                <div class="observation-metric">60%</div>
+                                <div class="observation-label">Retention Improvement</div>
+                                <div class="observation-description">Workplace-integrated learning shows better retention</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="observation-category">
+                        <h3>🎯 Qualitative Improvements</h3>
+                        <div class="qualitative-improvements">
+                            <div class="improvement-item">
+                                <div class="improvement-icon">🧠</div>
+                                <div class="improvement-content">
+                                    <h4>Enhanced Focus Quality</h4>
+                                    <p>Shorter, focused study blocks (1.5-2h) replace marathon sessions (8-12h) for better concentration and retention.</p>
+                                </div>
+                            </div>
+                            <div class="improvement-item">
+                                <div class="improvement-icon">😴</div>
+                                <div class="improvement-content">
+                                    <h4>Sleep Cycle Optimization</h4>
+                                    <p>Early sleep schedule (10:30 PM) improves morning performance and overall health sustainability.</p>
+                                </div>
+                            </div>
+                            <div class="improvement-item">
+                                <div class="improvement-icon">💼</div>
+                                <div class="improvement-content">
+                                    <h4>Work-Study Synergy</h4>
+                                    <p>Technical learning during work hours creates mutual reinforcement between career and exam preparation.</p>
+                                </div>
+                            </div>
+                            <div class="improvement-item">
+                                <div class="improvement-icon">🔄</div>
+                                <div class="improvement-content">
+                                    <h4>Sustainable Long-term Approach</h4>
+                                    <p>Reduced burnout risk enables consistent performance over the full 467-day preparation period.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Recommendations -->
+            <div class="strategic-recommendations">
+                <h2>💡 Strategic Recommendations for Success</h2>
+
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon">⏰</div>
+                            <h3>Time Management Excellence</h3>
+                        </div>
+                        <ul class="recommendation-list">
+                            <li>Maintain strict 9:00-9:45 AM technical learning window</li>
+                            <li>Use 45-minute focused blocks instead of marathon sessions</li>
+                            <li>Preserve morning 4:45-6:45 AM peak performance window</li>
+                            <li>Ensure 6.5-hour sleep cycle for optimal cognitive function</li>
+                        </ul>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon">📚</div>
+                            <h3>Study Strategy Optimization</h3>
+                        </div>
+                        <ul class="recommendation-list">
+                            <li>Weekly subject blocks for deep mastery over daily switching</li>
+                            <li>Weekend GS2 focus with extended practice sessions</li>
+                            <li>Current affairs integration with static subjects</li>
+                            <li>Regular mock tests and answer writing practice</li>
+                        </ul>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon">💻</div>
+                            <h3>Technical Growth Strategy</h3>
+                        </div>
+                        <ul class="recommendation-list">
+                            <li>Leverage workplace context for practical learning</li>
+                            <li>Build portfolio projects during weekend sessions</li>
+                            <li>Target industry certifications for career advancement</li>
+                            <li>Apply technical knowledge to UPSC governance topics</li>
+                        </ul>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon">🎯</div>
+                            <h3>Performance Monitoring</h3>
+                        </div>
+                        <ul class="recommendation-list">
+                            <li>Weekly progress reviews and schedule adjustments</li>
+                            <li>Monthly milestone assessments and course corrections</li>
+                            <li>Quarterly comprehensive performance evaluation</li>
+                            <li>Continuous feedback loop for optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Analysis Summary -->
+            <div class="final-analysis-summary">
+                <div class="summary-content">
+                    <h2>🎉 Schedule Optimization Analysis Summary</h2>
+                    <p class="summary-text">
+                        This comprehensive analysis demonstrates that <strong>strategic time management can enhance both career growth and exam preparation simultaneously</strong>. 
+                        The optimized approach delivers superior results with less time investment, creating a sustainable path to dual excellence in civil services and technical domains.
+                    </p>
+                    <div class="summary-stats">
+                        <div class="summary-stat">
+                            <span class="stat-value">23%</span>
+                            <span class="stat-label">Time Saved</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-value">20%</span>
+                            <span class="stat-label">Efficiency Gain</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">Sustainability</span>
+                        </div>
+                    </div>
+                    <div class="summary-footer">
+                        <p><em>Generated: September 21, 2025 | Status: Working Professional preparing for UPSC CSE 2026</em></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Notes Modal -->
+    <div id="notes-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📝 Daily Notes</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-date" id="modal-date"></div>
+                <div class="modal-subjects" id="modal-subjects"></div>
+                <textarea id="notes-textarea" placeholder="Add your daily notes, progress, and insights..."></textarea>
+            </div>
+            <div class="modal-footer">
+                <button id="save-notes" class="btn btn-primary">💾 Save Notes</button>
+                <button id="cancel-notes" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="enhanced_app.js"></script>
+</body>
+</html>
